@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+root {
+    font-size: 62.5%;    
+}
+
+body {
+    display: grid;
+    grid-template-rows: max-content
+                        1fr;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body.home {
+    background-image: url("./assets/imgs/mountains-universe-1.png");
+}
+
+body.universe {
+    background-image: url("./assets/imgs/mountains-universe02.png");
+}
+
+body.explorer {
+    background-image: url("./assets/imgs/mountains-universe-3.png");
+}
+
+header nav {
+    padding-left: 72px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #C4C4CC;
+}
+
+header nav a:visited {
+    text-decoration: none;
+}
+
+header nav a.active {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+header nav a {
+    font-size: 24px;
+}
+
+#app section#home {
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+section#home h1 {
+    font-size: 2.8rem;
+    font-weight: bold; ;
+}
+
+section#home button {
+    background: none;
+    color: #FFFFFF;
+    padding: 1.2rem 3.2rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 2.4rem;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+section#content {
+    max-width: 648px;
+    max-height: 232px;
+    font-size: 18px;
+    line-height: 160%;
+    margin-left: 102px;
+    margin-top: 64px;
+}
+
+section#content h1 {
+    font-size: 2.8rem;
+    font-weight: bold; ;
+}
+
+section#content p {
+    margin-top: 16px;
+}
